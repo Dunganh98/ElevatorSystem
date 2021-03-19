@@ -1,0 +1,1834 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../Console.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{margin:.79in .7in .79in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../Console.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72">
+
+<table border=0 cellpadding=0 cellspacing=0 width=2070 style='border-collapse:
+ collapse;table-layout:fixed;width:1553pt'>
+ <col class=xl68 width=1066 style='mso-width-source:userset;mso-width-alt:37916;
+ width:800pt'>
+ <col class=xl69 width=418 style='mso-width-source:userset;mso-width-alt:14848;
+ width:313pt'>
+ <col class=xl78 width=586 style='mso-width-source:userset;mso-width-alt:20849;
+ width:440pt'>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl85 width=1066 style='height:14.4pt;width:800pt'>Konsolenausgabe</td>
+  <td class=xl85 width=418 style='width:313pt'>Handlungen der Passagiere</td>
+  <td class=xl86 width=586 style='width:440pt'>Reaktion des Aufzugssystems<span
+  style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>OO:O6:O33O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  KEY_UP, info: 1</td>
+  <td class=xl70>Passagier A6: befindet sich im 1. Stock, will in 3.Stock<span
+  style='mso-spacerun:yes'>  </span>abgeliegert werd<span style='display:none'>en.</span></td>
+  <td class=xl79>Aufzug A: liegt im EG. Die Türen sind geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl66 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl71><span style='mso-spacerun:yes'> </span>KEY_UP auf EntracePanel
+  wird gedrückt</td>
+  <td class=xl80>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl66 style='height:14.4pt'>In state IDLE_DOORS_CLOSED:
+  OO:O6:O36O<span style='mso-spacerun:yes'>        </span>Controller 24c8:
+  Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl72>-</td>
+  <td class=xl81>Aufzug A: startet hoch zu fahren.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:O6:O96O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event REACHED_FLOOR, info: 1</td>
+  <td class=xl72 style='border-top:none'>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht 1. Stock</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:O7:O56O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:O7:O59O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_OPENS, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:O7:O59O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl74 style='border-top:none'>&nbsp;</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPENING: OO:O8:O22O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  KEY_UP, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier A1: ist im EG, will in 1.
+  Stock mitfahren. Er drückt KEY_UP aus<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl83 style='border-top:none'>-</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:1O:O17O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event KEY_UP, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier B1: ist im EG, will in 1.
+  Stock mitfahren. Er drückt KEY_UP aus<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl82 style='border-top:none'>Aufzug B: liegt im EG. Die Türen sind
+  geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  IDLE_DOORS_CLOSED: OO:1O:O2OO<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Zugangstür ist offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:1O:O2OO<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl74 style='border-top:none'>&nbsp;</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Kabinentür ist auch
+  offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  IDLE_DOORS_OPENING: In state IDLE_DOORS_OPENING: OO:1O:O53O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  ENTRANCEDOOR_FULLY_OPEN, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: liegt noch im 1. Stock. die
+  Zugangstür ist vollständig offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:1O:O83O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier A6: steigt ein.</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:11:OO1O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier A6: befindet sich in die
+  Kabinne</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:11:OO7O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event KEY_UP, info: 2</td>
+  <td class=xl74 style='border-top:none'>Passagier B2: ist im 2.Stock, will in
+  4.Stock mitfahren. Er drückt KEY_UP <span style='display:none'>aus</span></td>
+  <td class=xl83 style='border-top:none'>-</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  IDLE_DOORS_OPENING: OO:11:O25O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür ist
+  vollständig offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:11:O67O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event KEY_FLOOR, info: 3</td>
+  <td class=xl74 style='border-top:none'>Passagier A6: drückt den Zielstockwerk
+  3.Stock aus</td>
+  <td class=xl83 style='border-top:none'>-</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:13:O14O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Kabinentür ist
+  vollständig offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:13:O14O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  ENTRANCEDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Zugangstür ist
+  vollständig offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:13:O14O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  KEY_UP, info: 2</td>
+  <td class=xl70 style='border-top:none'>Passagier A3: ist im 2.Stock, will in
+  4.Stock mitfahren. Er drückt KEY_UP <span style='display:none'>aus</span></td>
+  <td class=xl83 style='border-top:none'>-</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: In state ASCENDING_DOORS_OPENING: In state
+  ASCENDING_DOORS_OPEN: OO:14:O1OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event KEY_UP, info: 1</td>
+  <td class=xl75>Passagier A5: ist im 1.Stock, will in 4.Stock mitfahren. Er
+  drückt KEY_UP aus</td>
+  <td class=xl84 style='border-top:none'>Aufzug A: Die Türen bleiben offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>&nbsp;</td>
+  <td class=xl76>&nbsp;</td>
+  <td class=xl84 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:15:O87O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier A5: steigt ein.</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:16:OO5O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier A5: befindet sich in die
+  Kabinne</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:16:O17O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:16:O2OO<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:16:O2OO<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: OO:16:O44O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  DOOR_BLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier B1: steigt ein.</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:16:O59O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier B1: befindet sich in die
+  Kabinne</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:16:O92O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event KEY_FLOOR, info: 4</td>
+  <td class=xl74 style='border-top:none'>Passagier A5: drückt den Zielstockwerk
+  4.Stock aus</td>
+  <td class=xl83 style='border-top:none'>-</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:16:O98O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event KEY_UP, info: 1</td>
+  <td class=xl74 style='border-top:none'>Passagier B3: ist im 1.Stock, will in
+  4.Stock mitfahren. Er drückt KEY_UP <span style='display:none'>aus.</span></td>
+  <td class=xl83 style='border-top:none'>-</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:17:O13O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:17:O16O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_CLOSES, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:17:O16O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: OO:17:O43O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  KEY_FLOOR, info: 1</td>
+  <td class=xl74 style='border-top:none'>Passagier B3: ist im 1.Stock, will in
+  3.Stock mitfahren. Er drückt KEY_UP <span style='display:none'>aus.</span></td>
+  <td class=xl83 style='border-top:none'>-</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:19:O14O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:19:O14O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  ENTRANCEDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:19:O17O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl81>Aufzug B:<span style='mso-spacerun:yes'>  </span>liegt noch im
+  EG, startet hoch zu fahren.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: In state ASCENDING_DRIVING: OO:19:O77O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  REACHED_FLOOR, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: erreicht 1. Stock</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:2O:O1OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_FULLY_CLOSED, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:2O:O37O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:2O:O4OO<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_OPENS, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Zugangstür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:2O:O4OO<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPENING: OO:2O:O82O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:2O:O85O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl81>Aufzug A:<span style='mso-spacerun:yes'>  </span>startet hoch
+  zu fahren.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:21:O48O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event REACHED_FLOOR, info: 2</td>
+  <td class=xl74 style='border-top:none'>Passagier A5 und A6 sind in der Kabine</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht 2. Stock</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:22:OO5O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:22:OO8O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_OPENS, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:22:OO8O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPENING: OO:23:O34O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Kabinentür ist
+  vollständig offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:24:OO9O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_FULLY_OPEN, info: 1</td>
+  <td class=xl74 style='border-top:none'>&nbsp;</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Zugangstür ist
+  vollständig offen. Er liegt im 1. Stock.<span
+  style='mso-spacerun:yes'>   </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:24:OO9O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  DOOR_BLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier B1 steige aus, Passagiere B3
+  und B4 steigen ein.<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPEN: OO:24:O21O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier B3 und B4 befindet sich in
+  die Kabinne</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:25:O38O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>&nbsp;</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:25:O53O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>&nbsp;</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:25:O59O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>&nbsp;</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:25:O74O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür ist
+  vollständig offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:25:O74O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  ENTRANCEDOOR_FULLY_OPEN, info: 2</td>
+  <td class=xl74 style='border-top:none'>Passagier A3 steigt ein.</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür ist
+  vollständig offen. Er liegt im 2.Stock.<span
+  style='mso-spacerun:yes'>   </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPEN: OO:25:O83O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>&nbsp;</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:25:O92O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event KEY_FLOOR, info: 4</td>
+  <td class=xl74 style='border-top:none'>Passagier B3: drückt den Zielstockwerk
+  4.Stock aus</td>
+  <td class=xl79 style='border-top:none'>Aufzug B: 4.Stock lässt in der
+  aufsteigenden Liste hinzufügen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:25:O98O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier A3 steigt ein.</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:26:O16O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event KEY_FLOOR, info: 3</td>
+  <td class=xl74 style='border-top:none'>Passagier B4: drückt den Zielstockwerk
+  3.Stock aus</td>
+  <td class=xl79 style='border-top:none'>Aufzug B: 3.Stock lässt in der
+  aufsteigenden Liste hinzufügen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:26:O16O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier A3 befindet sich in die
+  Kabinne</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: In state ASCENDING_DOORS_OPEN: OO:26:O94O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  KEY_FLOOR, info: 4</td>
+  <td class=xl74 style='border-top:none'>Passagier A3: drückt den Zielstockwerk
+  4.Stock aus</td>
+  <td class=xl79 style='border-top:none'>Aufzug A: 4.Stock lässt in der
+  aufsteigenden Liste hinzufügen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:27:O12O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:27:O15O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_CLOSES, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:27:O15O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: OO:28:O77O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:28:O8OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_CLOSES, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:28:O8OO<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: OO:3O:OO9O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:3O:O84O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_FULLY_CLOSED, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:3O:O87O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl81>Aufzug B:<span style='mso-spacerun:yes'>  </span>liegt im
+  1.Stock, startet hoch zu fahren.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:31:O5OO<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event REACHED_FLOOR, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: erreicht 2. Stock</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:32:OO7O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:32:O1OO<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_OPENS, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Zugangstür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:32:O1OO<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPENING: OO:32:O49O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:32:O49O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  ENTRANCEDOOR_FULLY_CLOSED, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:32:O52O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl81>Aufzug A:<span style='mso-spacerun:yes'>  </span>liegt im
+  2.Stock, startet hoch zu fahren.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: In state ASCENDING_DRIVING: OO:33:O12O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  REACHED_FLOOR, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht 3. Stock-Ziel des
+  A6</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:33:O72O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:33:O75O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_OPENS, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:33:O75O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPENING: OO:35:OO4O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Kabinentür ist
+  vollständig offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:35:O79O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_FULLY_OPEN, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Zugangstür ist
+  vollständig offen. Er liegt im 2.Stock.<span
+  style='mso-spacerun:yes'>   </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:36:O12O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl77><span style='mso-spacerun:yes'> </span>Passagier B2 steigt
+  ein.</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:36:O39O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl77><span style='mso-spacerun:yes'> </span>Passagier B2 befindet
+  sich in die Kabinne</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:36:O69O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_FULLY_OPEN, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür ist
+  vollständig offen. Er liegt im 3.Stock.<span
+  style='mso-spacerun:yes'>   </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:37:OO2O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl77>Passagier A6 steigt aus.</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:37:O14O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event KEY_FLOOR, info: 3</td>
+  <td class=xl74 style='border-top:none'>Passagier B2: drückt den Zielstockwerk
+  3.Stock aus</td>
+  <td class=xl79 style='border-top:none'>Aufzug B: 4.Stock liegt schon in der
+  aufsteigenden Liste.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:37:O14O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPEN: OO:37:O44O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür ist
+  vollständig offen.<span style='mso-spacerun:yes'>   </span>Er liegt im
+  3.Stock.<span style='mso-spacerun:yes'>   </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:38:O82O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:38:O85O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_CLOSES, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:38:O85O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: OO:4O:O47O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:4O:O5OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_CLOSES, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:4O:O5OO<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: OO:41:O79O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:42:O54O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_FULLY_CLOSED, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:42:O57O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl81>Aufzug B:<span style='mso-spacerun:yes'>  </span>liegt im
+  2.Stock, startet hoch zu fahren.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:43:O17O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event REACHED_FLOOR, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: erreicht 3. Stock-Ziel des
+  B2 und B4</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:43:O44O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_FULLY_CLOSED, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:43:O77O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:43:O8OO<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_OPENS, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Zugangstür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:43:O8OO<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPENING: OO:44:O19O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:44:O22O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl81>Aufzug A:<span style='mso-spacerun:yes'>  </span>startet hoch
+  zu fahren.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:44:O82O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event REACHED_FLOOR, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht 4. Stock- Ziel des
+  A3 und A5.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:45:O39O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:45:O42O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_OPENS, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:45:O42O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPENING: OO:46:O74O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Kabinentür ist
+  vollständig offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:47:O4OO<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl77>Passagier B2 und B4 steigen aus.</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:47:O49O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_FULLY_OPEN, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Zugangstür ist
+  vollständig offen. Er liegt im 3.Stock.<span
+  style='mso-spacerun:yes'>  </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:47:O55O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:47:O88O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:48:OO6O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:48:O36O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_FULLY_OPEN, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür ist
+  vollständig offen. Er liegt im 4.Stock.<span
+  style='mso-spacerun:yes'>   </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:48:O54O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl77>Passagier A3 und A5 steigen aus.</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:48:O72O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:48:O9OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:49:OO5O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl77><span style='mso-spacerun:yes'> </span>Kabine ist leer.</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:49:O11O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür ist
+  vollständig offen. Die aufsteigenden Liste ist leer</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:5O:O52O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:5O:O55O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_CLOSES, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:5O:O55O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: OO:52:O14O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:52:O17O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_CLOSES, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:52:O17O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: OO:53:O49O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:54:O24O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_FULLY_CLOSED, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:54:O27O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl81>Aufzug B:<span style='mso-spacerun:yes'>  </span>liegt im
+  3.Stock, startet hoch zu fahren.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:54:O87O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event REACHED_FLOOR, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: erreicht 4. Stock-Ziel des
+  B3</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:55:O11O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_FULLY_CLOSED, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig geschlossen.
+  Er liegt immer noch im 4.Stock.<span style='mso-spacerun:yes'>   </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:55:O44O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: OO:55:O47O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_OPENS, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Zugangstür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>OO:55:O47O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPENING: OO:55:O86O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: OO:55:O89O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl81>Aufzug A:<span style='mso-spacerun:yes'>  </span>liegt im
+  4.Stock, startet unten zu fahren, holt die Passagiere im EG ab.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DRIVING: OO:56:O52O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event REACHED_FLOOR, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht 3. Stock</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DRIVING: OO:57:O69O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event REACHED_FLOOR, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht 2. Stock</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DRIVING: OO:58:O41O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Kabinentür ist
+  vollständig offen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:58:O89O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event REACHED_FLOOR, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht 1. Stock</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DRIVING: OO:59:O16O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_FULLY_OPEN, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: die Zugangstür ist
+  vollständig offen. Er liegt im 4.Stock.<span
+  style='mso-spacerun:yes'>   </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: OO:59:O19O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl77>Passagier B3 steigt aus.</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: OO:59:O37O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: O1:OO:OO9O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event REACHED_FLOOR, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht EG</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DRIVING: O1:OO:O66O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DRIVING: O1:OO:O69O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>O1:OO:O69O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPENING: In state DESCENDING_DOORS_OPENING: O1:O2:O19O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: O1:O2:O22O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_CLOSES, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>O1:O2:O22O<span
+  style='mso-spacerun:yes'>        </span>Controller 26c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: O1:O3:O63O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  ENTRANCEDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür ist
+  vollständig offen. Er liegt im EG</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPENING: O1:O4:OO5O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagier A1, A2 und A4 steigen ein</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPENING: O1:O4:O2OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPENING: O1:O4:O26O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPENING: O1:O4:O35O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür ist
+  vollständig offen.<span style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPENING: O1:O4:O41O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPEN: O1:O4:O5OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>&nbsp;</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPEN: O1:O4:O65O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl74 style='border-top:none'>Passagiere A1, A2 und A4 befinden sich
+  in die Kabinne</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPEN: O1:O5:OO4O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event KEY_FLOOR, info: 2</td>
+  <td class=xl74 style='border-top:none'>Passagier A2: drückt den Zielstockwerk
+  2.Stock aus</td>
+  <td class=xl79 style='border-top:none'>Aufzug A: 2.Stock lässt in der
+  aufsteigenden Liste hinzufügen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPEN: O1:O5:O16O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: O1:O5:O34O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event KEY_FLOOR, info: 1</td>
+  <td class=xl74 style='border-top:none'>Passagier A1: drückt den Zielstockwerk
+  1.Stock aus</td>
+  <td class=xl79 style='border-top:none'>Aufzug A: 1.Stock lässt in der
+  aufsteigenden Liste hinzufügen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPEN: O1:O5:O61O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event KEY_FLOOR, info: 4</td>
+  <td class=xl74 style='border-top:none'>Passagier A4: drückt den Zielstockwerk
+  4.Stock aus</td>
+  <td class=xl79 style='border-top:none'>Aufzug A: 4.Stock lässt in der
+  aufsteigenden Liste hinzufügen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPEN: O1:O5:O91O<span style='mso-spacerun:yes'>       
+  </span>Controller 26c8: Received event ENTRANCEDOOR_FULLY_CLOSED, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug B:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig geschlossen.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: O1:O7:O38O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_OPEN: O1:O7:O41O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>O1:O7:O41O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_CLOSING: In state DESCENDING_DOORS_CLOSING: O1:1O:O35O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  ENTRANCEDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig
+  geschlossen.<span style='mso-spacerun:yes'>  </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_CLOSING: O1:11:OO7O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.
+  Er liegt momentan im EG</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  DESCENDING_DOORS_CLOSING: O1:11:O1OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl81>Aufzug A:<span style='mso-spacerun:yes'>  </span>startet hoch
+  zu fahren.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: O1:11:O7OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event REACHED_FLOOR, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht 1. Stock- Ziel des
+  A1</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: O1:12:O3OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: O1:12:O33O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_OPENS, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>O1:12:O33O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPENING: O1:15:O27O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  ENTRANCEDOOR_FULLY_OPEN, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür ist
+  vollständig offen. Er liegt im 1.Etage</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: O1:15:O69O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl77>Passagier A1 steigt aus.</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: O1:15:O84O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: O1:15:O99O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür ist
+  vollständig offen.<span style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: O1:19:OO2O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: O1:19:OO5O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_CLOSES, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>O1:19:OO5O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: O1:21:O99O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  ENTRANCEDOOR_FULLY_CLOSED, info: 1</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig
+  geschlossen.<span style='mso-spacerun:yes'>  </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: O1:22:O74O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.
+  Er liegt momentan im 1.Etage</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: O1:22:O77O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl81>Aufzug A:<span style='mso-spacerun:yes'>  </span>startet hoch
+  zu fahren.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: O1:23:O4OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event REACHED_FLOOR, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht 2. Stock- Ziel des
+  A2</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: O1:23:O97O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: O1:24:OOOO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_OPENS, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>O1:24:OOOO<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPENING: O1:27:O69O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür ist
+  vollständig offen.<span style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>O1:27:O69O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  ENTRANCEDOOR_FULLY_OPEN, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür ist
+  vollständig offen. Er liegt im 2.Etage</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPEN: O1:27:O84O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  DOOR_BLOCKED, info: 0</td>
+  <td class=xl77>Passagier A2 steigt aus.</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: O1:28:OO2O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: O1:3O:O72O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: O1:3O:O75O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_CLOSES, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>O1:3O:O75O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: O1:34:O44O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.
+  Er liegt momentan im 1.Etage</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>O1:34:O44O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  ENTRANCEDOOR_FULLY_CLOSED, info: 2</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür ist
+  vollständig offen. Er liegt im 2.Etage</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: O1:34:O47O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STARTS_RUNNING, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl81>Aufzug A:<span style='mso-spacerun:yes'>  </span>startet hoch
+  zu fahren.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: In state ASCENDING_DRIVING: O1:35:OO7O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  REACHED_FLOOR, info: 3</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht 3. Stock. Er fährt
+  vorbei. Denn es kein Ziel von Passigieren ist.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: O1:36:O27O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event REACHED_FLOOR, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: erreicht 4. Stock- Ziel des
+  A4</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: O1:36:O87O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event MOTOR_STOPPED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: kommt zum Halt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DRIVING: O1:36:O9OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_OPENS, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür öffnet. Es
+  liegt im 2.Etage</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>O1:36:O9OO<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_OPENS, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür öffnet</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: In state ASCENDING_DOORS_OPENING: O1:39:O84O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  ENTRANCEDOOR_FULLY_OPEN, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Zugangstür ist
+  vollständig offen. Er liegt im 4.Etage</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: O1:4O:O2OO<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_BLOCKED, info: 0</td>
+  <td class=xl77>Passagier A4 steigt aus.</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>jemanden befindet sich zwischen
+  die Türen</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: O1:4O:O32O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event DOOR_UNBLOCKED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Türensensor erkennt
+  dass<span style='mso-spacerun:yes'>  </span>die Türen wieder frei sind</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: O1:4O:O59O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event CABINDOOR_FULLY_OPEN, info: 0</td>
+  <td class=xl77><span style='mso-spacerun:yes'> </span>Die Kabine ist leer.
+  Alle Passagiere sind ans Ziel</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: die Kabinentür ist
+  vollständig offen. Die austeigene und absteigende Liste sind leer.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPENING: O1:43:O62O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event TIMER, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A: Der Timer startet, wird nach
+  3s abgelaufen. Danach schließen die Türen automatisch</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_OPEN: O1:43:O65O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event ENTRANCEDOOR_CLOSES, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür schließt</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>O1:43:O65O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  CABINDOOR_CLOSES, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür schließt.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: In state ASCENDING_DOORS_CLOSING: O1:46:O59O<span
+  style='mso-spacerun:yes'>        </span>Controller 24c8: Received event
+  ENTRANCEDOOR_FULLY_CLOSED, info: 4</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Zugangstür ist vollständig
+  geschlossen.<span style='mso-spacerun:yes'>  </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: O1:47:O34O<span style='mso-spacerun:yes'>       
+  </span>Controller 24c8: Received event CABINDOOR_FULLY_CLOSED, info: 0</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Aufzug A:<span
+  style='mso-spacerun:yes'>  </span>die Kabinentür ist vollständig geschlossen.
+  Er liegt momentan im 4.Etage</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl67 style='height:14.4pt;border-top:none'>In state
+  ASCENDING_DOORS_CLOSING: &gt;&gt;&gt; Simulator returned from run(), return
+  0.</td>
+  <td class=xl73>-</td>
+  <td class=xl82 style='border-top:none'>Simulation beendet!</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=1066 style='width:800pt'></td>
+  <td width=418 style='width:313pt'></td>
+  <td width=586 style='width:440pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

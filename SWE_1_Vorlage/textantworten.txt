@@ -1,0 +1,225 @@
+Textantworten auf Verstaendnisfragen aus Vorbereitung und Durchfuehrung
+=======================================================================
+
+###   Labor 1   ###
+
+Vorbereitung:
+
+Aufgabe 1.2
+	a) Hauptprogramm
+
+	a1. Beschreiben Sie Zeile fuer Zeile stichpunktartig, was in int main() geschieht: 
+		int main()
+		{
+    		// Start
+    		cout << "ElevatorSystemLab" << endl;		// Ausgeben in der Console mit dem Zeileumbruch	
+    		cout << "=================" << endl << endl; 	// Ausgeben in der Console mit dem Zeileumbruch	
+
+    		// Aufzugsystem definieren
+    		CElevatorSystem elevatorSystem(4);			// Definieren die Anzahl der Stockwerke fuer das Aufzugsystem: 'elevatorSystem' hat 4 Stockwerken
+    		elevatorSystem.addElevator();			// Erzeugen den ersten Aufzug fuer das Aufzugsystem 'elevatorSystem'
+    		elevatorSystem.addElevator();			// Erzeugen den zweiten Aufzug dazu
+
+    		// Simulation definieren, verbinden, und, falls gewollt, Passagiere hinzufuegen
+    		CSimulator simulator(&elevatorSystem);		// erzeugen einen neunen Objekt von der Klasse CSimulator. Damit man das 'elevatorSystem' mit der
+														// Simulation verbindet. 
+
+		    // Simulation starten
+    		simulator.run();					// rufen die Methode run() von der Klasse CSimulator auf. Damit wird die Simulation gestartet.
+    		cout << ">>> Simulator returned from run(), return 0." << endl;	// Ausgeben in der Console mit dem Zeileumbruch	
+    		return 0;						// Beenden Programm
+		}
+
+	a2. Was bedeuten die Deklarationen und Methodenaufrufe? Erlaeutern Sie auch die uebergebenen Parameter: 
+
+ 		-Deklarationen: informiert den Compiler darueber, dass eine bestimmte Funktion, dass eine bestimmte Funktion existiert und welche Parameter sie erwartet 
+ 	und welchen Wert sie zurueckgibt. ( Quelle: ET-Tutorials)
+
+ 		-Methodenaufrufe:ist das Aufrufen des in einer Methode ausgelagerten Quellcodes. Damit man eine Methode zB: von der Klasse CElevatosystem in main()
+verwenden kann, muss man erst einen Objekt für die Klasse deklarieren. Dann  müssen man beim Aufruf der Methode addElevator()
+das Objekt elevatorSystem voranstellen
+	
+	b)Ergaenzen Sie die Klassenbeziehungen ("kennt", "besitzt", "ist ein") und Kardinalitaeten ("beliebig viele", "einen", "drei oder mehr"...)
+
+		CElevatorSystem besitzt beliebigen vielen CCabin
+ 		CElevatorSystem besitzt einen CSystemController
+		CCabin besitzt einen CMotor
+		CCabin besitzt einen CHeightSensor 
+		CCabin besitzt einen CTimer
+		CCabin besitzt einen CCabinController
+ 		CMotor kennt einen CCabinController
+		CCabinController kennt einen CMotor 
+		CCabinController kennt einen CHeightSensor 
+		CCabinController kennt einen CTimer 
+		CCabinController besitzt einen CEventQueue
+		CSystemController kennt beliebigen vielen CCabinController
+		CSystemController besitzt einen CEventQueue
+	
+	c)Initialisierung des Aufzugsystems
+
+		1. main() ruft Methode CElevatorSystem::addElevator(...) des Objekts elevatorSystem auf
+		2. In Methode addElevator(...) ruft Methode CSystemController::connectCabinController(...)
+		des Objekts System Controller auf
+		3. In Methode connectCabinController(...) ruft Methode CCabinController::connectSystemController(...)
+		des Objekts Cabin Controller auf
+
+	d) Datentypen
+
+		-Die Kabine besitzt eine physikalische Groesse "Hoehe". Wie ist das im Code umgesetzt:
+		class CCabin
+		{
+			private:
+			float m_height
+		}
+ 		-Der Motor nimmt Einfluss auf die physikalische Groesse "Hoehe" der Kabine. Pointer m_pHeight von CMotor aktualisiert jeder Zeit die Hoehe des Aufzuges. Wie ist das im Code umgesetzt: 
+		class CMotor
+		{
+			private:
+			float* m_pHeight;
+		}
+	e) Periodische Simulation
+		Aktivitaetendiagram wird in HTML-Doku eingefuegt
+
+Aufgabe 1.3
+		
+		Anforderungen.xls wird ausgefuellt		
+		
+	Durchfuehrung:
+
+Aufgabe 2.1
+
+		- Das System wird als Aufzugsystem benannt
+		- Der Akteur handelt es sich um einen Passagier/ Passagieren
+		- Die Use Cases aus den Anforderung lautet folgendermassen: 
+ 		Als ein Passagier, der Aufzug benutzen moechte, werden wir den Haupt-Usecase als 'Passagier abholen und ans Ziel abliefern'
+	betrachtet. Die Usecases 'Zielstockwerk auswaehlen', 'Die Tueren ansteuern' und die drei weitere Use case werden inkludiert vom uebergeordneten UseCase "Ans Ziel abliefern". Damit die Tueren richtig ansteuern lassen koennen, muss das System  die Sensoren sowie Panels an Tueren auslesen und das Lichtstatus pruefen.
+	Ausserdem wird Use Case 'Aufzug nicht mitfahren kann' wird erweitert von dem Haupt- Use Case 'Ans Ziel bringen.
+	Die Use Cases 'Stoefall melden',Vorzugsfunktion aktivieren sowie 'Brandfall' werden 'Options' fuer uebergeordneten
+	Use Case 'Stoefall melden'. Das bedeutet der Passagier bekommt die Meldungen bei einem von drei  gegebenen untergeordneten Use Cases.
+	Bei jedem Stoefall muss die entsprechenden Anforderungen/Bedingungen unbedingt ausgefuehrt/geprueft werden. Also inkludiert.
+	Darueber hinaus gibt es auch Moeglichkeit: Nach einer Lieferung keine Fahrtwunsch mehr, sollte der Aufzug wieder ins EG fahren . Somit ist Use Case 'Ohnen Tastendrueck ins EG fahren' ein Option vom Haupt-Use Case 'Ans Ziel bringen'.
+	Bei der Vorzugsfunktion wird der Fahrwunsch sofort ausfuehren. Es ist also ein Option des
+uebergeordneten UseCases "Ans Ziel abliefern"
+	Aufgabe 2.2
+
+		Use-case Diagramm wird in HTML-Doku eingefuegt
+
+Aufgabe 2.3
+
+		Klassendiagram wird in HTML-Doku eingefuegt
+		
+Aufgabe 2.4
+		
+	a)Implemetierung
+	
+		CCabinController::work() von pseudecode vervollstaendig wird
+		
+	b) Pesistenz
+	
+		Wir koennen die Unterschied erkennen wenn wir mehr als 1 Aufzug in System haben:
+
+			+ Bei der Deklaration mit static wird der Wert von m_controllerState bis zum Ende des Programms behalten, dann bewegen alle Aufzüge wie der erste Aufzug. Das wollen wir hier nicht, sondern jede Kabine selbst bewegt und nicht voneinander abhängig. 
+			Da ist hier eine lokale static Variable nicht sinnvoll. Also static Variable hat das Lebensdauer solange das Programm ausgeführt wird. 
+
+			+ Wenn wir m_controllerState als private Attribute der Klasse deklarieren, wird die Variable m_controllerState, bei jedem Aufruf der Methode wok(), wieder neu initialisiert. Somit funktioniert Aufzuege vom Aufzugsystems selbstständig -> mehr sinnvoll 
+
+		
+	c) Dokumentation
+
+###   Labor 2   ###
+
+	Vorbereitung:
+
+Aufgabe 1.1
+	
+	a) 	Erstmal wird eine lokale Variable newEvents von type SEvent erzeugt. Weil SEvent ein Struct ist, deswegen koennen wir die vordefinierte Eventtype wählen.
+	In diesen Fall ist MOTOR_STOPPED oder MOTOR_STARTS_RUNNING. Mit dem Zeiger m_pCabinController koennen wir die Methode pushEvent() eingreifen und damit das neue Event
+	in die Eventqueue hinzugefügt wird.
+		CCabinController gibt erstmal die Eventtype aus (Console) und dannach schickt das neue Event zu der Eventqueue 
+
+	b) CCabinCOntroller hat ein Member m_eventQueue von class CEventQueue, damit koennen wir die Methode CEventQueue::popEvent() eingreifen. Diese Methode liefert das letzte Event
+	in der Eventqueue.
+	
+Aufgabe 1.2
+
+	a)	Konstruktor und Initialisierung von CCabinDoor
+		CCabinDoor ist ein CDoor (Vererbung)
+		CCabinDoor kann ingesamt 6 Ereignisse senden:
+			CCabin::evDoorBlocked()			//Event Door blocked
+  			CCabin::evDoorUnblocked()		//Event Door unblocked
+   			CCabin::evDoorOpens()			//Event Door opens
+   			CCabin::evDoorCloses()			//Event Door closes
+   			CCabin::evDoorFullyOpen()		//Event Door fully opens
+    		CCabin::evDoorFullyClosed()		//Event Door fully closes
+	
+	b) Funktionalität von CDoor
+		CDoor::open() und CDoor::close werden implemetiert
+	
+	c) Integration
+		Es gibt 2 Moeglichkeiten um eine Element hinzuzufuegen 
+			-Durch die Methode insert(std::pair<key_type,value_type>(key,value)) von class map
+			-Durch Zuweisungsoperation: m_value[key] = value 
+		Wir koennen mit die Methode map::find() ein Element mit einer bestimmten key suchen ob es ueberhaupt gibts.
+			map::find(key) es gibt das Value von das gegebene Key zurueck, wenn es existiert. Falls nicht gibt es
+			die map::end() zurueck
+
+Aufgabe 1.3
+	a) Konstruktor und Initialisierung
+		Konstruktor von CCabinPanel und die Methode CCabinPanel::connect(...) wird vervollstaendigt.
+		
+	b) Funktionalität
+		CCabinPanel kann Events senden:
+			CCabinPanel::evKeyCloseDoors()
+			CCabinPanel::evKeyHighPriority()
+			CCabinPanel::evKeyOpenDoors()
+			CCabinPanel::evKeyFloor(...)
+		Diese 4 Methode wird implementiert.
+	
+	c) Integration
+		 CCabinController::connectCabinPanel(…) wird implementiert, Cabin::setup(...) wird geändert.
+
+	Durchfuehrung:
+
+Aufgabe 2.1
+	
+	a) Integration der Zugaenge im CCabinController
+		Datentyp von Key: unsigned short, Datentyp von value: CEntrance*
+	
+	b) Integration der Zugänge in der CCabin
+		Datentyp von Key: unsigned short, Datentyp von value: CEntrance
+		
+Aufgabe 2.2
+	
+	a) Zustandsdiagramm 
+		Zustanddiagram wird in HTML-Doku eingefuegt
+		
+	b) Implementierung
+		CCabinController::work() wird implemetiert
+		In reelen Bedingung, kann es sei, dass mehrere Leute die Ruftaste oder Stockwerktaste gleichzeitig druecken. Dann musst der Aufzug in die Lage sein,
+	alle Taste erkennt, und entscheidet in welche reihenfolge werden alle Aktionen durchgefuehrt.
+		Es kann sein, dass in Realität zu viele Passagiere gibts. Deshalb darf der Aufzug nicht fahren, wenn es sich im Ueberladenzustand findet.
+	Darueber hinaus bleiben die Tueren nach dem Ankommen des Passagiers offen, bis eine Taste wieder gedrueckt wird. Somit im Fall vieler, ueber einige Stockwerke verteilter Fahrtwuensch 
+	muss der Passagier auf anderen Stockwerke ständig die Ruftaste drueckt, bis zum die Türen offnen und er rein gehen kann. (Ein Mal zum schliessen die Tueren, ein Mal zum Rufen den Aufzug zum aktuellen Stockwerk des Passagier. Zwar weisst er nicht genau, wann der vorherigen Passagiere fertig abgeliefert ist, deswegen muss er ständig druecken) -> nicht praktisch und nicht optimal.
+	c) Test
+		
+###   Labor 3   ###
+
+	Vorbereitung:
+
+Aufgabe 1.1
+	
+	Im Teil a,b funktioniert der Aufzug ohne Speicher 
+	1.1 a: Wenn Passagier B will in den 14. Stock, Der Aufzug holt B ab, fährt hoch, liefert B im 14. Stock ab, dann wieder unten in 6. Stock um den Passagier C abzuholen.
+	1.1 b: Wenn Passagier C will in den 9. Stock, arbeitet der Aufzug mit aufsteigende Liste und der Wert 9 wird in der aufsteigende Liste aktulisiert. Dann holt der Aufzug C im 6.Stock ab, bringt er ans Ziel am 9.Stock. B wird in 2.Stock abgeliefert.
+	
+	Im Teil a,b funktioniert der Aufzug mit Speicher
+	1.1 c Wenn wir die Ruftaste "nach oben" in die aufsteigen Liste und "nach unten" in die absteigende Liste anordnen, Gibt es Problemme bei hochfahren, und eine Ruftaste von dem Stockwert gedrückt wurde, der der Aufzug schon verpasst hat. Dann wird der Stockwerk in den aufsteigende Liste eingetragen, und wird nie bearbeitet. (wir wollen der Aufzug nach unten um den neue 
+	   Zielstockwerk erreichen, aber der Stockwerknummer ist in der aufsteigende List!) und umgekehrt.
+	Loesung: Die Position des neuen Ruf (P1) sollte mit der Position des aktuellen Aufzugs(P2) vergleichen und der Ruf sollte in einer passenden Liste eingeordnet werden.	
+
+
+	Durchfuehrung:
+
+		...
+
+

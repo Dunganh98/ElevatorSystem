@@ -1,0 +1,731 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../Zustandsuebergangstabelle.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{margin:.79in .7in .79in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;
+	mso-page-orientation:landscape;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../Zustandsuebergangstabelle.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72">
+
+<table border=0 cellpadding=0 cellspacing=0 width=4020 style='border-collapse:
+ collapse;table-layout:fixed;width:3017pt'>
+ <col width=22 style='mso-width-source:userset;mso-width-alt:796;width:17pt'>
+ <col width=285 style='mso-width-source:userset;mso-width-alt:10126;width:214pt'>
+ <col width=257 span=4 style='mso-width-source:userset;mso-width-alt:9130;
+ width:193pt'>
+ <col width=19 style='mso-width-source:userset;mso-width-alt:682;width:14pt'>
+ <col width=257 style='mso-width-source:userset;mso-width-alt:9130;width:193pt'>
+ <col width=282 style='mso-width-source:userset;mso-width-alt:10012;width:211pt'>
+ <col width=257 style='mso-width-source:userset;mso-width-alt:9130;width:193pt'>
+ <col width=285 style='mso-width-source:userset;mso-width-alt:10126;width:214pt'>
+ <col width=19 style='mso-width-source:userset;mso-width-alt:682;width:14pt'>
+ <col width=257 style='mso-width-source:userset;mso-width-alt:9130;width:193pt'>
+ <col width=288 style='mso-width-source:userset;mso-width-alt:10240;width:216pt'>
+ <col width=257 style='mso-width-source:userset;mso-width-alt:9130;width:193pt'>
+ <col width=284 style='mso-width-source:userset;mso-width-alt:10097;width:213pt'>
+ <col width=61 style='mso-width-source:userset;mso-width-alt:2161;width:46pt'>
+ <col width=209 style='mso-width-source:userset;mso-width-alt:7424;width:157pt'>
+ <col width=210 style='mso-width-source:userset;mso-width-alt:7452;width:157pt'>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 width=22 style='height:14.4pt;width:17pt'></td>
+  <td width=285 style='width:214pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=19 style='width:14pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=282 style='width:211pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=285 style='width:214pt'></td>
+  <td width=19 style='width:14pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=288 style='width:216pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=284 style='width:213pt'></td>
+  <td width=61 style='width:46pt'></td>
+  <td width=209 style='width:157pt'></td>
+  <td width=210 style='width:157pt'></td>
+ </tr>
+ <tr height=34 style='height:25.8pt'>
+  <td height=34 style='height:25.8pt'></td>
+  <td class=xl88 colspan=3 style='mso-ignore:colspan'>Zustandsübergangstabelle
+  für die Aufzugsteuerung in Labor 4</td>
+  <td colspan=15 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=28 style='height:21.0pt'>
+  <td height=28 style='height:21.0pt'></td>
+  <td class=xl86></td>
+  <td colspan=17 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=28 style='height:21.0pt'>
+  <td height=28 style='height:21.0pt'></td>
+  <td class=xl87 colspan=4 style='mso-ignore:colspan'><font class="font8">Blau:
+  Guard (falls notwendig), </font><font class="font9">Schwarz: Aktion (falls
+  notwendig), </font><font class="font10">Rot: Nächster Zustand (falls
+  Änderung)</font></td>
+  <td colspan=14 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 colspan=19 style='height:14.4pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=60 style='mso-height-source:userset;height:45.0pt'>
+  <td height=60 style='height:45.0pt'></td>
+  <td class=xl82 width=285 style='width:214pt'><font class="font0"><span
+  style='mso-spacerun:yes'>                                                     
+  </span>Zustand<br>
+    <span style='mso-spacerun:yes'>    </span>Event<span
+  style='mso-spacerun:yes'>       </span></font><font class="font7"><span
+  style='mso-spacerun:yes'>               </span></font></td>
+  <td class=xl84 style='border-left:none'>IDLE_DOORS_CLOSED</td>
+  <td class=xl84 style='border-left:none'>IDLE_DOORS_OPENING</td>
+  <td class=xl84 style='border-left:none'>IDLE_DOORS_OPEN</td>
+  <td class=xl84 style='border-left:none'>IDLE_DOORS_CLOSING</td>
+  <td></td>
+  <td class=xl85>ASCENDING_DRIVING</td>
+  <td class=xl85 style='border-left:none'>ASCENDING_DOORS_OPENING</td>
+  <td class=xl85 style='border-left:none'>ASCENDING_DOORS_OPEN</td>
+  <td class=xl85 style='border-left:none'>ASCENDING_DOORS_CLOSING</td>
+  <td></td>
+  <td class=xl85>DESCENDING_DRIVING</td>
+  <td class=xl85 style='border-left:none'>DESCENDING_DOORS_OPENING</td>
+  <td class=xl85 style='border-left:none'>DESCENDING_DOORS_OPEN</td>
+  <td class=xl85 style='border-left:none'>DESCENDING_DOORS_CLOSING</td>
+  <td></td>
+  <td class=xl85>FIREALARM_DRIVING</td>
+  <td class=xl85 style='border-left:none'>FIREALARM_FINAL</td>
+ </tr>
+ <tr height=113 style='mso-height-source:userset;height:84.9pt'>
+  <td height=113 style='height:84.9pt'></td>
+  <td rowspan=3 class=xl102 width=285 style='border-bottom:.5pt solid black;
+  border-top:none;width:214pt'>KEY_UP<br>
+    <font class="font0">bzw.</font><font class="font7"><br>
+    KEY_DOWN<br>
+    </font><font class="font1">auf Stockwerk 'floor'</font></td>
+  <td class=xl73 width=257 style='border-top:none;border-left:none;width:193pt'><font
+  class="font12">[floor==currentFloor()]</font><font class="font0"> <br>
+    openAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">IDLE_DOORS_OPENING</font></td>
+  <td class=xl73 width=257 style='border-top:none;border-left:none;width:193pt'>&nbsp;</td>
+  <td class=xl73 width=257 style='border-top:none;border-left:none;width:193pt'><font
+  class="font15">[floor==currentFloor()] </font><font class="font0"><br>
+    setTimer(DOOR_OPEN_DELAY);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl73 width=257 style='border-top:none;border-left:none;width:193pt'><font
+  class="font11">[floor==currentFloor()]</font><font class="font0"> <br>
+    openAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">IDLE_DOORS_OPENING</font></td>
+  <td></td>
+  <td rowspan=2 class=xl76 width=257 style='border-top:none;width:193pt'><font
+  class="font12">[floor&lt;=currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl76 width=282 style='border-top:none;border-left:none;width:211pt'>&nbsp;</td>
+  <td class=xl76 width=257 style='border-top:none;border-left:none;width:193pt'><font
+  class="font15">[floor==currentFloor()] </font><font class="font0"><br>
+    setTimer(DOOR_OPEN_DELAY);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl76 width=285 style='border-top:none;border-left:none;width:214pt'><font
+  class="font12">[floor==currentFloor()]</font><font class="font0"> <br>
+    openAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">ASCENDING_DOORS_OPENING</font></td>
+  <td></td>
+  <td rowspan=2 class=xl93 width=257 style='border-top:none;width:193pt'><font
+  class="font12">[floor&gt;=currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl93 width=288 style='border-top:none;border-left:none;width:216pt'>&nbsp;</td>
+  <td class=xl93 width=257 style='border-top:none;border-left:none;width:193pt'><font
+  class="font15">[floor==currentFloor()] </font><font class="font0"><br>
+    setTimer(DOOR_OPEN_DELAY);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl93 width=284 style='border-top:none;border-left:none;width:213pt'><font
+  class="font12">[floor==currentFloor()]</font><font class="font0"> <br>
+    openAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">DESCENDING_DOORS_OPENING</font></td>
+  <td></td>
+  <td rowspan=3 class=xl99 width=209 style='border-bottom:.5pt solid black;
+  border-top:none;width:157pt'>_</td>
+  <td rowspan=3 class=xl99 width=210 style='border-bottom:.5pt solid black;
+  border-top:none;width:157pt'>_</td>
+ </tr>
+ <tr height=113 style='mso-height-source:userset;height:84.9pt'>
+  <td height=113 style='height:84.9pt'></td>
+  <td class=xl75 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor); <br>
+    driveToFloor(floor); <br>
+    </font><font class="font5">ASCENDING_DRIVING</font></td>
+  <td class=xl75 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor); <br>
+    </font><font class="font5">ASCENDING_DOORS_OPENING</font></td>
+  <td class=xl75 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor); <br>
+    </font><font class="font5">ASCENDING_DOORS_OPEN</font></td>
+  <td class=xl75 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor); <br>
+    </font><font class="font5">ASCENDING_DOORS_CLOSING</font></td>
+  <td></td>
+  <td class=xl77 width=282 style='border-left:none;width:211pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl77 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl77 width=285 style='border-left:none;width:214pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td></td>
+  <td class=xl94 width=288 style='border-left:none;width:216pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl94 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl94 width=284 style='border-left:none;width:213pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td></td>
+ </tr>
+ <tr height=113 style='mso-height-source:userset;height:84.9pt'>
+  <td height=113 style='height:84.9pt'></td>
+  <td class=xl74 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"><br>
+    addToDescendingList(floor); <br>
+    driveToFloor(floor); <br>
+    </font><font class="font5">DESCENDING_DRIVING</font></td>
+  <td class=xl74 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor); <br>
+    </font><font class="font5">DESCENDING_DOORS_OPENING</font></td>
+  <td class=xl74 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'>  </span><br>
+    </font><font class="font5">DESCENDING_DOORS_OPEN</font></td>
+  <td class=xl74 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor); <br>
+    </font><font class="font5">DESCENDING_DOORS_CLOSING</font></td>
+  <td></td>
+  <td class=xl89 width=257 style='width:193pt'><font class="font12">[floor&gt;currentFloor()]</font><font
+  class="font6"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'>  </span><br>
+    driveToFloor(ascendingList.front());<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl78 width=282 style='border-left:none;width:211pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl78 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl78 width=285 style='border-left:none;width:214pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td></td>
+  <td class=xl95 width=257 style='width:193pt'><font class="font12">[floor&lt;currentFloor()]</font><font
+  class="font6"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'>  </span><br>
+    driveToFloor(descendingList.front());<span
+  style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl81 width=288 style='border-left:none;width:216pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl81 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl81 width=284 style='border-left:none;width:213pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td></td>
+ </tr>
+ <tr height=113 style='mso-height-source:userset;height:84.9pt'>
+  <td height=113 style='height:84.9pt'></td>
+  <td rowspan=3 class=xl102 width=285 style='border-bottom:.5pt solid black;
+  border-top:none;width:214pt'>KEY_FLOOR<br>
+    <font class="font0">für Stockwerk 'floor'</font></td>
+  <td class=xl73 width=257 style='border-top:none;border-left:none;width:193pt'><font
+  class="font12">[floor==currentFloor()]</font><font class="font0"> <br>
+    openAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">IDLE_DOORS_OPENING</font></td>
+  <td class=xl73 width=257 style='border-top:none;border-left:none;width:193pt'>&nbsp;</td>
+  <td class=xl73 width=257 style='border-top:none;border-left:none;width:193pt'><font
+  class="font15">[floor==currentFloor()] </font><font class="font0"><br>
+    setTimer(DOOR_OPEN_DELAY);</font></td>
+  <td class=xl73 width=257 style='border-top:none;border-left:none;width:193pt'><font
+  class="font12">[floor==currentFloor()]</font><font class="font0"> <br>
+    openAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">IDLE_DOORS_OPENING</font></td>
+  <td></td>
+  <td rowspan=2 class=xl76 width=257 style='width:193pt'><font class="font12">[floor&lt;=currentFloor()]</font><font
+  class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl76 width=282 style='border-top:none;border-left:none;width:211pt'>&nbsp;</td>
+  <td class=xl76 width=257 style='border-top:none;border-left:none;width:193pt'><font
+  class="font15">[floor==currentFloor()] </font><font class="font0"><br>
+    setTimer(DOOR_OPEN_DELAY);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl76 width=285 style='border-top:none;border-left:none;width:214pt'><font
+  class="font12">[floor==currentFloor()]</font><font class="font0"> <br>
+    openAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">ASCENDING_DOORS_OPENING</font></td>
+  <td></td>
+  <td rowspan=2 class=xl93 width=257 style='width:193pt'><font class="font12">[floor&gt;=currentFloor()]</font><font
+  class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl93 width=288 style='border-top:none;border-left:none;width:216pt'>&nbsp;</td>
+  <td class=xl93 width=257 style='border-top:none;border-left:none;width:193pt'><font
+  class="font15">[floor==currentFloor()] </font><font class="font0"><br>
+    setTimer(DOOR_OPEN_DELAY);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl93 width=284 style='border-top:none;border-left:none;width:213pt'><font
+  class="font12">[floor==currentFloor()]</font><font class="font0"> <br>
+    openAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">DESCENDING_DOORS_OPENING</font></td>
+  <td></td>
+  <td rowspan=3 class=xl99 width=209 style='border-bottom:.5pt solid black;
+  border-top:none;width:157pt'>_</td>
+  <td rowspan=3 class=xl99 width=210 style='border-bottom:.5pt solid black;
+  border-top:none;width:157pt'>_</td>
+ </tr>
+ <tr height=113 style='mso-height-source:userset;height:84.9pt'>
+  <td height=113 style='height:84.9pt'></td>
+  <td class=xl75 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor); <br>
+    driveToFloor(floor); <br>
+    </font><font class="font5">ASCENDING_DRIVING</font></td>
+  <td class=xl75 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'>    </span><br>
+    closeAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">ASCENDING_DOORS_CLOSING</font></td>
+  <td class=xl75 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'>  </span><br>
+    closeAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">ASCENDING_DOORS_CLOSING</font></td>
+  <td class=xl75 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor); <br>
+    </font><font class="font5">ASCENDING_DOORS_CLOSING</font></td>
+  <td></td>
+  <td class=xl77 width=282 style='border-left:none;width:211pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl77 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl77 width=285 style='border-left:none;width:214pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td></td>
+  <td class=xl94 width=288 style='border-left:none;width:216pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl94 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl94 width=284 style='border-left:none;width:213pt'><font
+  class="font12">[floor&gt;currentFloor()]</font><font class="font0"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td></td>
+ </tr>
+ <tr height=113 style='mso-height-source:userset;height:84.9pt'>
+  <td height=113 style='height:84.9pt'></td>
+  <td class=xl74 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor); <br>
+    driveToFloor(floor); <br>
+    </font><font class="font5">DESCENDING_DRIVING</font></td>
+  <td class=xl74 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'>  </span><br>
+    closeAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">DESCENDING_DOORS_CLOSING</font></td>
+  <td class=xl74 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'>    </span><br>
+    closeAllDoorsCurrentFloor(); <br>
+    </font><font class="font5">DESCENDING_DOORS_CLOSING</font></td>
+  <td class=xl74 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor); <br>
+    </font><font class="font5">DESCENDING_DOORS_CLOSING</font></td>
+  <td></td>
+  <td class=xl89 width=257 style='width:193pt'><font class="font12">[floor&gt;currentFloor()]</font><font
+  class="font6"> <br>
+    addToAscendingList(floor);<span style='mso-spacerun:yes'>  </span><br>
+    driveToFloor(ascendingList.front());<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl78 width=282 style='border-left:none;width:211pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl78 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl78 width=285 style='border-left:none;width:214pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td></td>
+  <td class=xl95 width=257 style='width:193pt'><font class="font12">[floor&lt;currentFloor()]</font><font
+  class="font6"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'>  </span><br>
+    driveToFloor(descendingList.front());<span
+  style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl81 width=288 style='border-left:none;width:216pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl81 width=257 style='border-left:none;width:193pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td class=xl81 width=284 style='border-left:none;width:213pt'><font
+  class="font12">[floor&lt;currentFloor()]</font><font class="font0"> <br>
+    addToDescendingList(floor);<span style='mso-spacerun:yes'> </span></font></td>
+  <td></td>
+ </tr>
+ <tr height=86 style='mso-height-source:userset;height:65.1pt'>
+  <td height=86 style='height:65.1pt'></td>
+  <td class=xl83 width=285 style='border-top:none;width:214pt'>KEY_OPEN_DOORS</td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>openAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">IDLE_DOORS_OPENING</font></td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>setTimer(DOOR_OPEN_DELAY);<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>openAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">IDLE_DOORS_OPENING</font></td>
+  <td></td>
+  <td class=xl68 width=257 style='width:193pt'>_</td>
+  <td class=xl68 width=282 style='border-top:none;border-left:none;width:211pt'>_</td>
+  <td class=xl68 width=257 style='border-top:none;border-left:none;width:193pt'>setTimer(DOOR_OPEN_DELAY);<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl68 width=285 style='border-top:none;border-left:none;width:214pt'>openAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">ASCENDING_DOORS_OPENING</font></td>
+  <td></td>
+  <td class=xl67 width=257 style='width:193pt'>_</td>
+  <td class=xl67 width=288 style='border-top:none;border-left:none;width:216pt'>_</td>
+  <td class=xl67 width=257 style='border-top:none;border-left:none;width:193pt'>setTimer(DOOR_OPEN_DELAY);<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl67 width=284 style='border-top:none;border-left:none;width:213pt'>openAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">DESCENDING_DOORS_OPENING</font></td>
+  <td></td>
+  <td class=xl96 width=209 style='border-top:none;width:157pt'>_</td>
+  <td class=xl96 width=210 style='border-top:none;border-left:none;width:157pt'>_</td>
+ </tr>
+ <tr height=86 style='mso-height-source:userset;height:65.1pt'>
+  <td height=86 style='height:65.1pt'></td>
+  <td class=xl83 width=285 style='border-top:none;width:214pt'>KEY_CLOSE_DOORS</td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>closeAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">IDLE_DOORS_CLOSING</font></td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>closeAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">IDLE_DOORS_CLOSING</font></td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td></td>
+  <td class=xl68 width=257 style='border-top:none;width:193pt'>_</td>
+  <td class=xl68 width=282 style='border-top:none;border-left:none;width:211pt'>closeAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">ASCENDING_DOORS_CLOSING</font></td>
+  <td class=xl68 width=257 style='border-top:none;border-left:none;width:193pt'>closeAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">ASCENDING_DOORS_CLOSING</font></td>
+  <td class=xl68 width=285 style='border-top:none;border-left:none;width:214pt'>_</td>
+  <td></td>
+  <td class=xl67 width=257 style='border-top:none;width:193pt'>_</td>
+  <td class=xl67 width=288 style='border-top:none;border-left:none;width:216pt'>closeAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">DESCENDING_DOORS_CLOSING</font></td>
+  <td class=xl67 width=257 style='border-top:none;border-left:none;width:193pt'>closeAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">DESCENDING_DOORS_CLOSING</font></td>
+  <td class=xl67 width=284 style='border-top:none;border-left:none;width:213pt'>_</td>
+  <td></td>
+  <td class=xl96 width=209 style='border-top:none;width:157pt'>_</td>
+  <td class=xl96 width=210 style='border-top:none;border-left:none;width:157pt'>_</td>
+ </tr>
+ <tr height=86 style='mso-height-source:userset;height:65.1pt'>
+  <td height=86 style='height:65.1pt'></td>
+  <td class=xl83 width=285 style='border-top:none;width:214pt'>TIMER</td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>closeAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">IDLE_DOORS_CLOSING</font></td>
+  <td class=xl65 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td></td>
+  <td class=xl68 width=257 style='border-top:none;width:193pt'>_</td>
+  <td class=xl68 width=282 style='border-top:none;border-left:none;width:211pt'>_</td>
+  <td class=xl68 width=257 style='border-top:none;border-left:none;width:193pt'>closeAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">ASCENDING_DOORS_CLOSING</font></td>
+  <td class=xl68 width=285 style='border-top:none;border-left:none;width:214pt'>_</td>
+  <td></td>
+  <td class=xl67 width=257 style='border-top:none;width:193pt'>_</td>
+  <td class=xl67 width=288 style='border-top:none;border-left:none;width:216pt'>_</td>
+  <td class=xl67 width=257 style='border-top:none;border-left:none;width:193pt'>closeAllDoorsCurrentFloor();
+  <br>
+    <font class="font5">DESCENDING_DOORS_CLOSING</font></td>
+  <td class=xl67 width=284 style='border-top:none;border-left:none;width:213pt'>_</td>
+  <td></td>
+  <td class=xl96 width=209 style='border-top:none;width:157pt'>_</td>
+  <td class=xl96 width=210 style='border-top:none;border-left:none;width:157pt'>allSignalFlashing();</td>
+ </tr>
+ <tr height=86 style='mso-height-source:userset;height:65.1pt'>
+  <td height=86 style='height:65.1pt'></td>
+  <td class=xl83 width=285 style='border-top:none;width:214pt'>MOTOR_STOPPED</td>
+  <td class=xl66 style='border-top:none;border-left:none'>_</td>
+  <td class=xl66 style='border-top:none;border-left:none'>_</td>
+  <td class=xl66 style='border-top:none;border-left:none'>_</td>
+  <td class=xl66 style='border-top:none;border-left:none'>_</td>
+  <td></td>
+  <td class=xl68 width=257 style='border-top:none;width:193pt'>openAllDoorsCurrentFloor();
+  <br>
+    ascendingList.pop_front() <br>
+    <font class="font5">ASCENDING_DOORS_OPENING</font></td>
+  <td class=xl68 width=282 style='border-top:none;border-left:none;width:211pt'>_</td>
+  <td class=xl68 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td class=xl68 width=285 style='border-top:none;border-left:none;width:214pt'>_</td>
+  <td></td>
+  <td class=xl67 width=257 style='border-top:none;width:193pt'>openAllDoorsCurrentFloor();
+  <br>
+    descendingList.pop_front() <br>
+    <font class="font5">DESCENDING_DOORS_OPENING</font></td>
+  <td class=xl67 width=288 style='border-top:none;border-left:none;width:216pt'>_</td>
+  <td class=xl67 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td class=xl67 width=284 style='border-top:none;border-left:none;width:213pt'>_</td>
+  <td></td>
+  <td class=xl96 width=209 style='border-top:none;width:157pt'>openAllDoorsCurrentFloor();
+  <br>
+    <font class="font16">FIREALARM_FINAL</font></td>
+  <td class=xl96 width=210 style='border-top:none;border-left:none;width:157pt'>_</td>
+ </tr>
+ <tr height=129 style='mso-height-source:userset;height:96.75pt'>
+  <td height=129 style='height:96.75pt'></td>
+  <td class=xl83 width=285 style='border-top:none;width:214pt'>CABINDOOR_FULLY_OPEN<br>
+    <span style='mso-spacerun:yes'> </span><font class="font0">bzw.</font><font
+  class="font7"> <br>
+    ENTRANCEDOOR_FULLY_OPEN</font></td>
+  <td class=xl69 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td class=xl69 width=257 style='border-top:none;border-left:none;width:193pt'><font
+  class="font15">[allDoorsOpenCurrentFloor()] </font><font class="font0"><br>
+    setTimer(DOOR_OPEN_DELAY); <br>
+    </font><font class="font13">IDLE_DOORS_OPEN</font></td>
+  <td class=xl69 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td class=xl69 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td></td>
+  <td class=xl70 width=257 style='border-top:none;width:193pt'>_</td>
+  <td class=xl70 width=282 style='border-top:none;border-left:none;width:211pt'><font
+  class="font15">[allDoorsOpenCurrentFloor()]</font><font class="font0"> <br>
+    setTimer(DOOR_OPEN_DELAY); <br>
+    </font><font class="font13">ASCENDING_DOORS_OPEN</font></td>
+  <td class=xl70 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td class=xl70 width=285 style='border-top:none;border-left:none;width:214pt'>_</td>
+  <td></td>
+  <td class=xl71 width=257 style='border-top:none;width:193pt'>_</td>
+  <td class=xl71 width=288 style='border-top:none;border-left:none;width:216pt'><font
+  class="font15">[allDoorsOpenCurrentFloor()]</font><font class="font0"> <br>
+    setTimer(DOOR_OPEN_DELAY); <br>
+    </font><font class="font13">DESCENDING_DOORS_OPEN</font></td>
+  <td class=xl71 width=257 style='border-top:none;border-left:none;width:193pt'>_</td>
+  <td class=xl71 width=284 style='border-top:none;border-left:none;width:213pt'>_</td>
+  <td></td>
+  <td class=xl97 width=209 style='border-top:none;width:157pt'>_</td>
+  <td class=xl110 width=210 style='border-top:none;border-left:none;width:157pt'>[allSignalOn()
+  || allSignalOff()] <br>
+    <font class="font6">setTimer(500); </font><font class="font11"><br>
+    [sonst]<span style='mso-spacerun:yes'>                             </span></font><font
+  class="font6">turnOffAllSingal();</font></td>
+ </tr>
+ <tr height=117 style='mso-height-source:userset;height:87.75pt'>
+  <td height=117 style='height:87.75pt'></td>
+  <td rowspan=3 class=xl102 width=285 style='border-bottom:.5pt solid black;
+  border-top:none;width:214pt'>CABINDOOR_FULLY_CLOSED<br>
+    <font class="font0">bzw.</font><font class="font7"><br>
+    ENTRANCEDOOR_FULLY_CLOSED<span style='mso-spacerun:yes'> </span></font></td>
+  <td rowspan=3 class=xl109 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>_</td>
+  <td rowspan=3 class=xl109 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>_</td>
+  <td rowspan=3 class=xl109 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>_</td>
+  <td rowspan=3 class=xl105 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'><font class="font12">[allDoorsClosedCurrentFloor()]</font><font
+  class="font6"> <br>
+    </font><font class="font5">IDLE_DOORS_CLOSED</font></td>
+  <td></td>
+  <td rowspan=3 class=xl72 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>_</td>
+  <td rowspan=3 class=xl72 width=282 style='border-bottom:.5pt solid black;
+  border-top:none;width:211pt'>_</td>
+  <td rowspan=3 class=xl72 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>_</td>
+  <td class=xl72 width=285 style='border-top:none;border-left:none;width:214pt'><font
+  class="font14">[allDoorsClosedCurrentFloor() <br>
+    &amp;&amp; !ascendingList.empty()] </font><font class="font0"><br>
+    driveToFloor(ascendingList.front()) </font><font class="font5">ASCENDING_DRIVING</font></td>
+  <td></td>
+  <td rowspan=3 class=xl90 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>_</td>
+  <td rowspan=3 class=xl90 width=288 style='border-bottom:.5pt solid black;
+  border-top:none;width:216pt'>_</td>
+  <td rowspan=3 class=xl90 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>_</td>
+  <td class=xl90 width=284 style='border-top:none;border-left:none;width:213pt'><font
+  class="font14">[allDoorsClosedCurrentFloor() <br>
+    &amp;&amp; !descendingList.empty()] </font><font class="font0"><br>
+    driveToFloor(descendingList.front()) </font><font class="font5">DESCENDING_DRIVING</font></td>
+  <td></td>
+  <td rowspan=3 class=xl99 width=209 style='border-bottom:.5pt solid black;
+  border-top:none;width:157pt'>_</td>
+  <td rowspan=3 class=xl99 width=210 style='border-bottom:.5pt solid black;
+  border-top:none;width:157pt'>openAllDoorsCurrentFloor();<span
+  style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=117 style='mso-height-source:userset;height:87.75pt'>
+  <td height=117 style='height:87.75pt'></td>
+  <td></td>
+  <td class=xl79 width=285 style='border-left:none;width:214pt'><font
+  class="font12">[allDoorsClosedCurrentFloor()<br>
+    &amp;&amp; ascendingList.empty()<br>
+    &amp;&amp; !descendingList.empty()]</font><font class="font0"><br>
+    driveToFloor(descendingList.front()) <br>
+    </font><font class="font5">DESCENDING_DRIVING</font></td>
+  <td></td>
+  <td class=xl91 width=284 style='border-left:none;width:213pt'><font
+  class="font12">[allDoorsClosedCurrentFloor()<br>
+    &amp;&amp; descendingList.empty()<br>
+    &amp;&amp; !ascendingList.empty()]</font><font class="font0"><br>
+    driveToFloor(ascendingList.front()) <br>
+    </font><font class="font5">ASCENDING_DRIVING</font></td>
+  <td></td>
+ </tr>
+ <tr height=113 style='mso-height-source:userset;height:84.75pt'>
+  <td height=113 style='height:84.75pt'></td>
+  <td></td>
+  <td class=xl80 width=285 style='border-left:none;width:214pt'><font
+  class="font12">[allDoorsClosedCurrentFloor() <br>
+    &amp;&amp; ascendingList.empty() <br>
+    &amp;&amp; descendingList.empty()] </font><font class="font0"><br>
+    </font><font class="font5">IDLE_DOORS_CLOSED</font></td>
+  <td></td>
+  <td class=xl92 width=284 style='border-left:none;width:213pt'><font
+  class="font12">[allDoorsClosedCurrentFloor() <br>
+    &amp;&amp; ascendingList.empty() <br>
+    &amp;&amp; descendingList.empty()] </font><font class="font0"><br>
+    </font><font class="font5">IDLE_DOORS_CLOSED</font></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td rowspan=3 class=xl102 width=285 style='border-bottom:.5pt solid black;
+  border-top:none;width:214pt'>FIREALERT<font class="font7"><span
+  style='mso-spacerun:yes'> </span></font></td>
+  <td rowspan=3 class=xl105 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>FIREALARM_FINAL</td>
+  <td rowspan=3 class=xl105 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>FIREALARM_FINAL</td>
+  <td rowspan=3 class=xl105 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>FIREALARM_FINAL</td>
+  <td rowspan=3 class=xl105 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>FIREALARM_FINAL</td>
+  <td></td>
+  <td rowspan=3 class=xl108 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>FIREALARM_DRIVING</td>
+  <td rowspan=3 class=xl108 width=282 style='border-bottom:.5pt solid black;
+  border-top:none;width:211pt'>FIREALARM_FINAL</td>
+  <td rowspan=3 class=xl108 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>FIREALARM_FINAL</td>
+  <td rowspan=3 class=xl108 width=285 style='border-bottom:.5pt solid black;
+  border-top:none;width:214pt'>FIREALARM_FINAL</td>
+  <td></td>
+  <td rowspan=3 class=xl98 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>FIREALARM_DRIVING</td>
+  <td rowspan=3 class=xl98 width=288 style='border-bottom:.5pt solid black;
+  border-top:none;width:216pt'>FIREALARM_FINAL</td>
+  <td rowspan=3 class=xl98 width=257 style='border-bottom:.5pt solid black;
+  border-top:none;width:193pt'>FIREALARM_FINAL</td>
+  <td rowspan=3 class=xl98 width=284 style='border-bottom:.5pt solid black;
+  border-top:none;width:213pt'>FIREALARM_FINAL</td>
+  <td></td>
+  <td rowspan=3 class=xl99 width=209 style='border-bottom:.5pt solid black;
+  border-top:none;width:157pt'>_</td>
+  <td rowspan=3 class=xl99 width=210 style='border-bottom:.5pt solid black;
+  border-top:none;width:157pt'>_</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=48 style='mso-height-source:userset;height:36.0pt'>
+  <td height=48 style='height:36.0pt'></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=22 style='width:17pt'></td>
+  <td width=285 style='width:214pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=19 style='width:14pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=282 style='width:211pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=285 style='width:214pt'></td>
+  <td width=19 style='width:14pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=288 style='width:216pt'></td>
+  <td width=257 style='width:193pt'></td>
+  <td width=284 style='width:213pt'></td>
+  <td width=61 style='width:46pt'></td>
+  <td width=209 style='width:157pt'></td>
+  <td width=210 style='width:157pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
